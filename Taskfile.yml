@@ -1,0 +1,10 @@
+version: '3'
+
+silent: true
+
+tasks:
+  force-update:
+    cmds:
+      - git add --update
+      - git commit --amend --no-edit
+      - git push --force
